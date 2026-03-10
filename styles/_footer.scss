@@ -66,4 +66,12 @@ footer {
   i {
     font-size: 10px;
   }
+
+   ul li a:hover i {
+    color: colors.$secondColor;
+  }
+  
+   ul li:nth-child(3) a:hover i {
+    color: colors.$mainColor;
+  }
 }

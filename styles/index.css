@@ -533,6 +533,12 @@ footer a {
 footer i {
   font-size: 10px;
 }
+footer ul li a:hover i {
+  color: #5474FD;
+}
+footer ul li:nth-child(3) a:hover i {
+  color: #FFFFFF;
+}
 
 @media (min-width: 768px) {
   .box {
