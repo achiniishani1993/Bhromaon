@@ -86,8 +86,8 @@
       </div>
     </nav>
     <main>
-<!-- section one start -->
-       <section class="containerOne">
+      <!-- section one start -->
+      <section class="containerOne">
         <div class="containerOne__text">
           <h2>Why Choose Us</h2>
           <p>
@@ -107,7 +107,41 @@
         </div>
       </section>
 
+      <!-- steps section start -->
+      <section class="steps">
+        <!-- SVG cubic bezier curves -->
+        <svg
+          class="steps__curves"
+          viewbox="0 0 600 80"
+          preserveaspectratio="none"
+        >
+          <!-- Curve 1- Search - Select -->
+          <path class="curve" d="M 110,60 C 160,-10 200,-10 280,60" />
+          <!-- Curve 2- Select - Book -->
+          <path class="curve" d="M 320,60 C 380,-10 420,-10 490,60" />
+        </svg>
 
+        <div class="step">
+          <div class="step__icon step__icon--search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <p class="step__label">Search Places</p>
+        </div>
+
+        <div class="step">
+          <div class="step__icon step__icon--select">
+            <i class="fa-regular fa-circle-check"></i>
+          </div>
+          <p class="step__label">Select Places</p>
+        </div>
+
+        <div class="step">
+          <div class="step__icon step__icon--book">
+            <i class="fa-regular fa-thumbs-up"></i>
+          </div>
+          <p class="step__label">Book & Enjoy</p>
+        </div>
+      </section>
     </main>
     <script src="/script/script.js"></script>
   </body>
