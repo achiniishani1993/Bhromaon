@@ -1,0 +1,43 @@
+/* Base / Global Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5px;
+  min-height: 100vh;
+  display: grid;
+  
+  grid-template-areas:
+    "head"
+    "nav"
+    "main"
+    "footer";
+
+  grid-template-rows: auto 97px 1fr auto;
+  grid-template-columns: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+header {
+  grid-area: head;
+}
+
+nav {
+ grid-area: nav;
+}
+
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
