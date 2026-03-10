@@ -236,6 +236,8 @@ $font-sizes: (
     max-width: 300px;
     margin: 0 auto;
     background-color: colors.$thirdColor;
+
+    animation: fadeUp 1s ease;
   }
   .containerFour__image img {
     width: 100%;
@@ -263,5 +265,16 @@ $font-sizes: (
       text-align: left;
       padding: 5px 10px;
     }
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
