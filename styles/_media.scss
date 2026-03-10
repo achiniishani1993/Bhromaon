@@ -216,30 +216,24 @@ $font-sizes: (
     }
     &__search {
       max-width: 650px;
-      width: 90%;
-
+  
       input {
-        flex: 1;
         font-size: map-get($font-sizes, "small");
         line-height: 1.5;
       }
       button {
-        display: flex;
-        align-items: center;
         font-size: map-get($font-sizes, "small");
         line-height: 1.5;
       }
     }
 
     &__scroll {
-      text-align: center;
-      color: colors.$mainColor;
-
       p {
         font-size: map-get($font-sizes, "small");
       }
     }
   }
+  
   // navigation
   .nav {
     display: flex;

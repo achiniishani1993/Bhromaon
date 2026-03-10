@@ -58,10 +58,13 @@ footer {
   letter-spacing: 0.426rem;
 }
 .box__search {
-  display: flex;
   max-width: 350px;
   width: 90%;
   margin: auto;
+}
+.box__search form {
+  display: flex;
+  width: 100%;
 }
 .box__search input {
   flex: 1;
@@ -685,22 +688,14 @@ footer ul li:nth-child(3) a:hover i {
   }
   .box__search {
     max-width: 650px;
-    width: 90%;
   }
   .box__search input {
-    flex: 1;
     font-size: 14px;
     line-height: 1.5;
   }
   .box__search button {
-    display: flex;
-    align-items: center;
     font-size: 14px;
     line-height: 1.5;
-  }
-  .box__scroll {
-    text-align: center;
-    color: #FFFFFF;
   }
   .box__scroll p {
     font-size: 14px;
