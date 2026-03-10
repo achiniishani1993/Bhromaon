@@ -501,6 +501,25 @@ footer {
   .containerTwo__content button {
     font-size: 16px;
   }
+  .containerThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 500px 230px;
+  }
+  .containerThree__content {
+    grid-column: 3/4;
+  }
+  .containerThree__content h2 {
+    font-size: 20px;
+  }
+  .containerThree__content h3 {
+    font-size: 20px;
+  }
+  .containerThree__content p {
+    font-size: 16px;
+  }
+  .containerThree__content button {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1024px) {
   .box {
@@ -608,6 +627,25 @@ footer {
     font-size: 16px;
   }
   .containerTwo__content button {
+    font-size: 16px;
+  }
+  .containerThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 500px 230px;
+  }
+  .containerThree__content {
+    grid-column: 3/4;
+  }
+  .containerThree__content h2 {
+    font-size: 20px;
+  }
+  .containerThree__content h3 {
+    font-size: 20px;
+  }
+  .containerThree__content p {
+    font-size: 16px;
+  }
+  .containerThree__content button {
     font-size: 16px;
   }
 }

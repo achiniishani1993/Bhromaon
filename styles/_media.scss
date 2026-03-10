@@ -131,10 +131,31 @@ $font-sizes: (
       }
     }
   }
+
+  // section three
+  .containerThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 500px 230px;
+
+    &__content {
+      grid-column: 3/4;
+
+      h2 {
+        font-size: map-get($font-sizes, "medium");
+      }
+      h3 {
+        font-size: map-get($font-sizes, "medium");
+      }
+      p {
+        font-size: map-get($font-sizes, "normal");
+      }
+
+      button {
+        font-size: map-get($font-sizes, "normal");
+      }
+    }
+  }
 }
-
-
-
 
 //Desktop
 
@@ -262,6 +283,30 @@ $font-sizes: (
 
     &__content {
       grid-column: 2/3;
+
+      h2 {
+        font-size: map-get($font-sizes, "medium");
+      }
+      h3 {
+        font-size: map-get($font-sizes, "medium");
+      }
+      p {
+        font-size: map-get($font-sizes, "normal");
+      }
+
+      button {
+        font-size: map-get($font-sizes, "normal");
+      }
+    }
+  }
+
+  // section three
+  .containerThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 500px 230px;
+
+    &__content {
+      grid-column: 3/4;
 
       h2 {
         font-size: map-get($font-sizes, "medium");
