@@ -1,0 +1,118 @@
+@use "colors";
+
+// Define variables
+$mainFont: "Josefin Sans", sans-serif;
+$secondaryFont: "Aleo", serif;
+
+//map function for fonts
+$font-sizes: (
+  "extra-small": 10px,
+  "small": 14px,
+  "normal": 16px,
+  "medium": 20px,
+  "large": 22px,
+  "xx-large": 24px,
+  "pro-large": 36px,
+  "xxx-large": 48px,
+);
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  background: colors.$secondColor;
+
+  /* logo */
+  &__left {
+    p {
+      font-family: $mainFont;
+      color: colors.$mainColor;
+      font-weight: bold;
+      font-size: map-get($font-sizes, "medium");
+      letter-spacing: 0.15rem;
+    }
+  }
+
+  /* desktop menu (hidden on mobile) */
+  &__right {
+    ul {
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 20px;
+
+      li a {
+        font-family: $secondaryFont;
+        font-size: map-get($font-sizes, "small");
+        text-decoration: none;
+        color: colors.$mainColor;
+        letter-spacing: 0.05rem;
+      }
+
+      li a:hover {
+        border-bottom: 2px solid red;
+      }
+    }
+  }
+
+  /* hamburger icon */
+  .menu-icon {
+    font-size: 22px;
+    color: colors.$mainColor;
+    cursor: pointer;
+  }
+
+  /* mobile side navigation */
+  &__sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    background: colors.$secondColor;
+
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: map-get($font-sizes, "small");
+      color: colors.$mainColor;
+      font-family: $secondaryFont;
+      gap: 20px;
+
+       transition: 0.3s;
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 30px;
+    }
+    a:not(.closebtn):hover {
+      background-color: black;
+      color: white;
+     
+    }
+
+    .closebtn:hover {
+      color: red;
+    }
+  }
+}
