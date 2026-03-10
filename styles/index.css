@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 5px;
   min-height: 100vh;
@@ -92,7 +96,6 @@ footer {
   border: 2px solid #5474FD;
 }
 .box__scroll {
-  /* need to add scrolling link  */
   text-align: center;
   color: #FFFFFF;
   padding-top: 50px;
@@ -102,6 +105,16 @@ footer {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: 0.175rem;
+}
+.box__scroll p a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.box__scroll p a:visited {
+  font-size: 14px;
+}
+.box__scroll p a:hover {
+  font-size: 20px;
 }
 .box__scroll span {
   width: 17px;

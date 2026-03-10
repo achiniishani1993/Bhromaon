@@ -45,12 +45,12 @@ $font-sizes: (
     max-width: 350px;
     width: 90%;
     margin: auto;
-    
+
     form {
-    display: flex;
-    width: 100%;
+      display: flex;
+      width: 100%;
     }
-    
+
     input {
       flex: 1;
       padding: 10px;
@@ -79,7 +79,6 @@ $font-sizes: (
   }
 
   &__scroll {
-    /* need to add scrolling link  */
     text-align: center;
     color: colors.$mainColor;
     padding-top: 50px;
@@ -89,6 +88,19 @@ $font-sizes: (
       font-size: map-get($font-sizes, "small");
       line-height: 1.8;
       letter-spacing: 0.175rem;
+
+      a {
+        text-decoration: none;
+        color: colors.$mainColor;
+
+        &:visited {
+          font-size: map-get($font-sizes, "small");
+        }
+
+        &:hover {
+          font-size: map-get($font-sizes, "medium");
+        }
+      }
     }
 
     span {
