@@ -1,0 +1,96 @@
+
+@use "colors";
+
+// Define variables
+$mainFont: "Josefin Sans", sans-serif;
+$secondaryFont: "Aleo", serif;
+$line-height: 4px;
+
+//map function for fonts
+$font-sizes: (
+  "extra-small": 10px,
+  "small": 14px,
+  "normal": 16px,
+  "medium": 20px,
+  "large": 22px,
+  "xx-large": 24px,
+  "pro-large": 36px,
+  "xxx-large": 48px,
+);
+
+// steps section
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  text-align: center;
+  padding: 40px 0;
+
+  background-color: colors.$thirdColor;
+}
+
+/* SVG curves container */
+.steps__curves {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  overflow: visible;
+}
+
+/* curve path style */
+.curve {
+  fill: none;
+  stroke: colors.$mainColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+
+/* step container */
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+
+  padding-top: 30px;
+}
+
+/* icon circle */
+.step__icon {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+/* icon colors */
+.step__icon--search {
+  color: colors.$secondColor;
+  font-size: 30px;
+}
+
+.step__icon--select {
+  color: colors.$fourthColor;
+  font-size: 30px;
+}
+
+.step__icon--book {
+  color: colors.$fifthColor;
+  font-size: 30px;
+}
+
+/* label */
+.step__label {
+  color: colors.$mainColor;
+  font-family: $secondaryFont;
+  font-size: map-get($font-sizes, "normal");
+}
