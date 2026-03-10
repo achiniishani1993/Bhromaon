@@ -138,7 +138,7 @@ footer {
   letter-spacing: 0.05rem;
 }
 .nav__right ul li a:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #111111;
 }
 .nav {
   /* hamburger icon */
