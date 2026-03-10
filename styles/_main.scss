@@ -1,0 +1,80 @@
+@use "colors";
+
+// Define variables
+$mainFont: "Josefin Sans", sans-serif;
+$secondaryFont: "Aleo", serif;
+$line-height: 4px;
+
+//map function for fonts
+$font-sizes: (
+  "extra-small": 10px,
+  "small": 14px,
+  "normal": 16px,
+  "medium": 20px,
+  "large": 22px,
+  "xx-large": 24px,
+  "pro-large": 36px,
+  "xxx-large": 48px,
+);
+
+// section one
+.containerOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 60px 20px;
+
+  background-image: url("/Images/buildings.png");
+
+  background-size: cover;
+  background-position: center;
+  color: colors.$mainColor;
+
+  &__text {
+    h2 {
+      font-family: $secondaryFont;
+      font-size: map-get($font-sizes, "large");
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: $mainFont;
+      font-size: map-get($font-sizes, "small");
+      font-weight: 400;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+
+      border: none;
+      background: colors.$secondColor;
+      color: colors.$mainColor;
+
+      font-family: $secondaryFont;
+      font-size: map-get($font-sizes, "small");
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+    }
+  }
+
+  &__images {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    img {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+    }
+  }
+}
