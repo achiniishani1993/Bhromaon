@@ -353,6 +353,57 @@ footer {
   border: 1px solid #5474FD;
 }
 
+.containerFour {
+  min-height: 500px;
+  padding: 50px 20px;
+  background-image: url("/Images/man1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+.containerFour h2 {
+  text-align: center;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin: 40px 0;
+}
+.containerFour .containerFour__box {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #333333;
+}
+.containerFour .containerFour__image img {
+  width: 100%;
+  display: block;
+}
+.containerFour .containerFour__text h3 {
+  font-family: "Aleo", serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+.containerFour .containerFour__text i {
+  color: #5474FD;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.containerFour .containerFour__text p {
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0 20px 10px 0;
+  text-align: left;
+  padding: 5px 10px;
+}
+
 .steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
