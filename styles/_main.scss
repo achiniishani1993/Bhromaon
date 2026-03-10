@@ -62,6 +62,11 @@ $font-sizes: (
       letter-spacing: 0.1rem;
       cursor: pointer;
     }
+
+    button:hover {
+        background-color: colors.$blackColor;
+        border: 1px solid colors.$secondColor;
+    }
   }
 
   &__images {

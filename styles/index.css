@@ -231,6 +231,10 @@ footer {
   letter-spacing: 0.1rem;
   cursor: pointer;
 }
+.containerOne__text button:hover {
+  background-color: #111111;
+  border: 1px solid #5474FD;
+}
 .containerOne__images {
   margin-top: 40px;
   display: flex;
