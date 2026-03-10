@@ -69,9 +69,11 @@ $font-sizes: (
   align-items: center;
   justify-content: center;
 
-  font-size: 24px;
+  transition: background-color 2s, transform 2s;
 }
-
+ .step__icon:hover { 
+  transform: rotate(360deg);
+ }
 /* icon colors */
 .step__icon--search {
   color: colors.$secondColor;
