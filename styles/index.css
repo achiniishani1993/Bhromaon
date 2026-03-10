@@ -99,4 +99,49 @@ footer {
   height: 11px;
 }
 
+@media (min-width: 768px) {
+  .box {
+    padding: 70px 20px 60px;
+  }
+  .box__search {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .box {
+    min-height: 87vh;
+  }
+  .box__title {
+    padding-top: 100px;
+  }
+  .box__title h1 {
+    font-size: 48px;
+  }
+  .box__title h6 {
+    font-size: 22px;
+  }
+  .box__search {
+    max-width: 650px;
+    width: 90%;
+  }
+  .box__search input {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .box__search button {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .box__scroll {
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .box__scroll p {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

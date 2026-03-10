@@ -1,0 +1,70 @@
+@use "colors";
+
+// Define variables
+$mainFont: "Josefin Sans", sans-serif;
+$secondaryFont: "Aleo", serif;
+
+//map function for fonts
+$font-sizes: (
+  "extra-small": 10px,
+  "small": 14px,
+  "normal": 16px,
+  "medium": 20px,
+  "large": 22px,
+  "xx-large": 24px,
+  "pro-large": 36px,
+  "xxx-large": 48px,
+);
+
+// Tablet
+
+@media (min-width: 768px) {
+  .box {
+    padding: 70px 20px 60px;
+  }
+
+  .box__search {
+    max-width: 500px;
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .box {
+    min-height: 87vh;
+    &__title {
+      padding-top: 100px;
+      h1 {
+        font-size: map-get($font-sizes, "xxx-large");
+      }
+      h6 {
+        font-size: map-get($font-sizes, "large");
+      }
+    }
+    &__search {
+      max-width: 650px;
+      width: 90%;
+
+      input {
+        flex: 1;
+        font-size: map-get($font-sizes, "small");
+        line-height: 1.5;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        font-size: map-get($font-sizes, "small");
+        line-height: 1.5;
+      }
+    }
+
+    &__scroll {
+      text-align: center;
+      color: colors.$mainColor;
+
+      p {
+        font-size: map-get($font-sizes, "small");
+      }
+    }
+  }
+}
