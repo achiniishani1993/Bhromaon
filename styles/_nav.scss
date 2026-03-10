@@ -64,7 +64,10 @@ $font-sizes: (
     color: colors.$mainColor;
     cursor: pointer;
   }
-
+  
+  .menu-icon:hover {
+    color: colors.$blackColor;
+  }
   /* mobile side navigation */
   &__sidenav {
     height: 100%;
@@ -112,7 +115,7 @@ $font-sizes: (
     }
 
     .closebtn:hover {
-      color: red;
+      color: colors.$redColor;
     }
   }
 }

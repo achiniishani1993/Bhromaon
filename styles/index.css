@@ -148,6 +148,9 @@ footer {
   color: #FFFFFF;
   cursor: pointer;
 }
+.nav .menu-icon:hover {
+  color: #111111;
+}
 .nav {
   /* mobile side navigation */
 }
