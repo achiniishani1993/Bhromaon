@@ -56,6 +56,39 @@ $font-sizes: (
         display: none;
     }
   }
+
+  // section one
+
+  .containerOne {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: left;
+    padding: 80px 40px;
+
+    &__text {
+        h2 {
+       
+        font-size: map-get($font-sizes, "pro-large");
+      }
+
+      p {
+         max-width: 550px;
+        font-size: map-get($font-sizes, "normal");
+      }
+    }
+
+    &__images {
+      width: 40%;
+      align-items: flex-end;
+
+      img {
+        max-width: 300px;
+      }
+    }
+
+  }
 }
 
 
@@ -132,4 +165,36 @@ $font-sizes: (
         display: none;
     }
   }
+
+  // section one 
+
+  .containerOne {
+    padding: 80px;
+  }
+
+  .containerOne {
+
+    padding: 120px 80px;
+
+    &__text {
+
+      h2 {
+        font-size: map-get($font-sizes, "pro-large");
+      }
+
+      p {
+        font-size: map-get($font-sizes, "normal");
+      }
+    }
+
+    &__images {
+     display: flex;
+
+      img:first-child {
+       align-self: flex-start;
+      }
+    }
+
+  }
+
 }
