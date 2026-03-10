@@ -145,11 +145,9 @@ $font-sizes: (
   }
 }
 
-
-
 // Section three -spain container 2
 
-  .containerThree {
+.containerThree {
   display: flex;
   justify-content: center;
   min-height: 500px;
@@ -166,6 +164,8 @@ $font-sizes: (
     opacity: 0.9;
     padding: 20px;
     margin-top: 60px;
+
+    box-shadow: 10px 10px 5px colors.$blackColor;
     h2 {
       font-family: $mainFont;
       font-size: map-get($font-sizes, "normal");
@@ -198,6 +198,10 @@ $font-sizes: (
       border: none;
       letter-spacing: 0.075rem;
     }
+
+    button:hover {
+      background-color: colors.$blackColor;
+      border: 1px solid colors.$secondColor;
+    }
   }
-  
 }
