@@ -256,7 +256,6 @@ footer {
   background-color: #333333;
 }
 
-/* SVG curves container */
 .steps__curves {
   position: absolute;
   top: 30px;
@@ -266,7 +265,6 @@ footer {
   overflow: visible;
 }
 
-/* curve path style */
 .curve {
   fill: none;
   stroke: #FFFFFF;
@@ -274,7 +272,6 @@ footer {
   stroke-linecap: round;
 }
 
-/* step container */
 .step {
   display: flex;
   flex-direction: column;
@@ -283,7 +280,6 @@ footer {
   padding-top: 30px;
 }
 
-/* icon circle */
 .step__icon {
   width: 56px;
   height: 56px;
@@ -298,7 +294,6 @@ footer {
   transform: rotate(360deg);
 }
 
-/* icon colors */
 .step__icon--search {
   color: #5474FD;
   font-size: 30px;
@@ -314,7 +309,6 @@ footer {
   font-size: 30px;
 }
 
-/* label */
 .step__label {
   color: #FFFFFF;
   font-family: "Aleo", serif;

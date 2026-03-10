@@ -30,7 +30,6 @@ $font-sizes: (
   background-color: colors.$thirdColor;
 }
 
-/* SVG curves container */
 .steps__curves {
   position: absolute;
   top: 30px;
@@ -40,7 +39,6 @@ $font-sizes: (
   overflow: visible;
 }
 
-/* curve path style */
 .curve {
   fill: none;
   stroke: colors.$mainColor;
@@ -48,7 +46,6 @@ $font-sizes: (
   stroke-linecap: round;
 }
 
-/* step container */
 .step {
   display: flex;
   flex-direction: column;
@@ -58,7 +55,6 @@ $font-sizes: (
   padding-top: 30px;
 }
 
-/* icon circle */
 .step__icon {
   width: 56px;
   height: 56px;
@@ -71,10 +67,11 @@ $font-sizes: (
 
   transition: background-color 2s, transform 2s;
 }
+
  .step__icon:hover { 
   transform: rotate(360deg);
  }
-/* icon colors */
+
 .step__icon--search {
   color: colors.$secondColor;
   font-size: 30px;
@@ -90,7 +87,6 @@ $font-sizes: (
   font-size: 30px;
 }
 
-/* label */
 .step__label {
   color: colors.$mainColor;
   font-family: $secondaryFont;
