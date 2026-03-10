@@ -288,6 +288,7 @@ footer {
   align-items: center;
   justify-content: center;
   transition: background-color 2s, transform 2s;
+  cursor: pointer;
 }
 
 .step__icon:hover {
