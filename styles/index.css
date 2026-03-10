@@ -368,6 +368,20 @@ footer {
   .containerOne__images img {
     max-width: 300px;
   }
+  /* Steps*/
+  .step__icon--search {
+    font-size: 40px;
+  }
+  .step__icon--select {
+    font-size: 40px;
+  }
+  .step__icon--book {
+    font-size: 40px;
+  }
+  /* label */
+  .step__label {
+    font-size: 24px;
+  }
 }
 @media (min-width: 1024px) {
   .box {
@@ -444,6 +458,19 @@ footer {
   }
   .containerOne__images img:first-child {
     align-self: flex-start;
+  }
+  .step__icon--search {
+    font-size: 50px;
+  }
+  .step__icon--select {
+    font-size: 50px;
+  }
+  .step__icon--book {
+    font-size: 50px;
+  }
+  /* label */
+  .step__label {
+    font-size: 36px;
   }
 }
 
