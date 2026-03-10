@@ -16,7 +16,7 @@ $font-sizes: (
   "xxx-large": 48px,
 );
 
-// mobile size 
+// mobile size
 .box {
   background-image: url(/Images/Mountain.png);
   background-size: cover;
@@ -35,13 +35,11 @@ $font-sizes: (
     h1 {
       font-size: map-get($font-sizes, "xx-large");
       letter-spacing: 0.3rem;
-      
     }
     h6 {
       font-size: map-get($font-sizes, "medium");
       letter-spacing: 0.426rem;
     }
-
   }
   &__search {
     display: flex;
@@ -70,13 +68,14 @@ $font-sizes: (
       gap: 8px;
     }
     button:hover {
-        background-color: colors.$blackColor;
-        color: colors.$mainColor;
-        border: 2px solid colors.$secondColor;
+      background-color: colors.$blackColor;
+      color: colors.$mainColor;
+      border: 2px solid colors.$secondColor;
     }
   }
 
-  &__scroll {                             /* need to add scrolling link  */
+  &__scroll {
+    /* need to add scrolling link  */
     text-align: center;
     color: colors.$mainColor;
     padding-top: 50px;
