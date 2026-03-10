@@ -1,3 +1,102 @@
+/* Base / Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 5px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "head" "nav" "main" "footer";
+  grid-template-rows: auto 97px 1fr auto;
+  grid-template-columns: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+header {
+  grid-area: head;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.box {
+  background-image: url(/Images/Mountain.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px 10px;
+}
+.box__title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.box__title h1 {
+  font-size: 24px;
+  letter-spacing: 0.3rem;
+}
+.box__title h6 {
+  font-size: 20px;
+  letter-spacing: 0.426rem;
+}
+.box__search {
+  display: flex;
+  max-width: 350px;
+  width: 90%;
+  margin: auto;
+}
+.box__search input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 10px;
+  letter-spacing: 0.18rem;
+  text-align: center;
+}
+.box__search button {
+  padding: 0 15px;
+  border: none;
+  background: #5474FD;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Aleo", serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.box__scroll {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 50px;
+}
+.box__scroll p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.175rem;
+}
+.box__scroll span {
+  width: 17px;
+  height: 11px;
+}
 
 /*# sourceMappingURL=index.css.map */

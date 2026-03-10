@@ -1,0 +1,89 @@
+@use "colors";
+
+// Define variables
+$mainFont: "Josefin Sans", sans-serif;
+$secondaryFont: "Aleo", serif;
+
+//map function for fonts
+$font-sizes: (
+  "extra-small": 10px,
+  "small": 14px,
+  "normal": 16px,
+  "medium": 20px,
+  "large": 22px,
+  "xx-large": 24px,
+  "pro-large": 36px,
+  "xxx-large": 48px,
+);
+
+// mobile size 
+.box {
+  background-image: url(/Images/Mountain.png);
+  background-size: cover;
+  background-position: center;
+  font-family: $mainFont;
+  color: colors.$mainColor;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px 10px;
+
+  &__title {
+    text-align: center;
+    padding-bottom: 20px;
+    h1 {
+      font-size: map-get($font-sizes, "xx-large");
+      letter-spacing: 0.3rem;
+    }
+    h6 {
+      font-size: map-get($font-sizes, "medium");
+      letter-spacing: 0.426rem;
+    }
+  }
+  &__search {
+    display: flex;
+    max-width: 350px;
+    width: 90%;
+    margin: auto;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      font-size: map-get($font-sizes, "extra-small");
+      letter-spacing: 0.18rem;
+      text-align: center;
+    }
+    button {
+      padding: 0 15px;
+      border: none;
+      background: colors.$secondColor;
+      color: colors.$mainColor;
+      cursor: pointer;
+      font-size: map-get($font-sizes, "extra-small");
+      font-family: $secondaryFont;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  &__scroll {
+    text-align: center;
+    color: colors.$mainColor;
+    padding-top: 50px;
+
+    p {
+      font-family: $mainFont;
+      font-size: map-get($font-sizes, "small");
+      line-height: 1.8;
+      letter-spacing: 0.175rem;
+    }
+
+    span {
+      width: 17px;
+      height: 11px;
+    }
+  }
+}
