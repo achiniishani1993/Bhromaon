@@ -247,6 +247,54 @@ footer {
   height: auto;
 }
 
+.containerTwo {
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+  padding: 80px 20px;
+  background-image: url("/Images/hotel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+.containerTwo__content {
+  background-color: #232323;
+  opacity: 0.9;
+  padding: 20px;
+  margin-top: 60px;
+}
+.containerTwo__content h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.0938rem;
+  margin-bottom: 10px;
+}
+.containerTwo__content h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.containerTwo__content p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.containerTwo__content button {
+  max-width: 150px;
+  width: 100%;
+  min-height: auto;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #5474FD;
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  border: none;
+  letter-spacing: 0.075rem;
+}
+
 .steps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

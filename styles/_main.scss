@@ -83,3 +83,57 @@ $font-sizes: (
     }
   }
 }
+
+// Section two -spain container 1 
+
+.containerTwo {
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+  padding: 80px 20px;
+
+  background-image: url("/Images/hotel.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: colors.$mainColor;
+
+  &__content {
+    background-color: colors.$sixthColor;
+    opacity: 0.9;
+    padding: 20px;
+    margin-top: 60px;
+    h2 {
+      font-family: $mainFont;
+      font-size: map-get($font-sizes, "normal");
+      letter-spacing: 0.0938rem;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-family: $mainFont;
+      font-size: map-get($font-sizes, "normal");
+      margin-bottom: 10px;
+    }
+    p {
+      font-family: $mainFont;
+      font-size: map-get($font-sizes, "small");
+      line-height: 1.5;
+      margin-bottom: 50px;
+    }
+
+    button {
+      max-width: 150px;
+      width: 100%;
+      min-height: auto;
+      padding: 20px;
+      cursor: pointer;
+
+      background-color: colors.$secondColor;
+      font-family: $secondaryFont;
+      font-size: map-get($font-sizes, "small");
+      color: colors.$mainColor;
+      border: none;
+      letter-spacing: 0.075rem;
+    }
+  }
+}
