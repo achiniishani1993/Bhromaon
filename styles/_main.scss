@@ -64,8 +64,8 @@ $font-sizes: (
     }
 
     button:hover {
-        background-color: colors.$blackColor;
-        border: 1px solid colors.$secondColor;
+      background-color: colors.$blackColor;
+      border: 1px solid colors.$secondColor;
     }
   }
 
@@ -84,7 +84,7 @@ $font-sizes: (
   }
 }
 
-// Section two -spain container 1 
+// Section two -spain container 1
 
 .containerTwo {
   display: flex;
@@ -103,6 +103,8 @@ $font-sizes: (
     opacity: 0.9;
     padding: 20px;
     margin-top: 60px;
+
+    box-shadow: 10px 10px 5px colors.$blackColor;
     h2 {
       font-family: $mainFont;
       font-size: map-get($font-sizes, "normal");
@@ -134,6 +136,11 @@ $font-sizes: (
       color: colors.$mainColor;
       border: none;
       letter-spacing: 0.075rem;
+    }
+
+    button:hover {
+      background-color: colors.$blackColor;
+      border: 1px solid colors.$secondColor;
     }
   }
 }

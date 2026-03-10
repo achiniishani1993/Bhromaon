@@ -263,6 +263,7 @@ footer {
   opacity: 0.9;
   padding: 20px;
   margin-top: 60px;
+  box-shadow: 10px 10px 5px #111111;
 }
 .containerTwo__content h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -293,6 +294,10 @@ footer {
   color: #FFFFFF;
   border: none;
   letter-spacing: 0.075rem;
+}
+.containerTwo__content button:hover {
+  background-color: #111111;
+  border: 1px solid #5474FD;
 }
 
 .steps {
