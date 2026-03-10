@@ -183,6 +183,21 @@ $font-sizes: (
       }
     }
   }
+
+  // footer
+  footer {
+    h3 {
+      font-size: map-get($font-sizes, "xx-large");
+    }
+
+    h6 {
+      font-size: map-get($font-sizes, "normal");
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
 }
 
 //Desktop
@@ -377,6 +392,21 @@ $font-sizes: (
       p {
         font-size: map-get($font-sizes, "normal");
       }
+    }
+  }
+
+  // footer
+  footer {
+    h3 {
+      font-size: map-get($font-sizes, "xx-large");
+    }
+
+    h6 {
+      font-size: map-get($font-sizes, "normal");
+    }
+
+    i {
+      font-size: 20px;
     }
   }
 }

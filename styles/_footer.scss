@@ -1,0 +1,69 @@
+@use "colors";
+
+// Define variables
+$mainFont: "Josefin Sans", sans-serif;
+$secondaryFont: "Aleo", serif;
+$line-height: 4px;
+
+//map function for fonts
+$font-sizes: (
+  "extra-small": 10px,
+  "small": 14px,
+  "normal": 16px,
+  "medium": 20px,
+  "large": 22px,
+  "xx-large": 24px,
+  "pro-large": 36px,
+  "xxx-large": 48px,
+);
+
+footer {
+  display: grid;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+
+  background-color: colors.$sixthColor;
+  text-align: center;
+  color: colors.$mainColor;
+  padding: 30px;
+
+  h3 {
+    font-family: $mainFont;
+    font-size: map-get($font-sizes, "large");
+    font-weight: bold;
+  }
+
+  h6 {
+    font-family: $mainFont;
+    font-size: map-get($font-sizes, "small");
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  ul li:nth-child(3) i {
+    color: colors.$secondColor;
+  }
+
+  a {
+    text-decoration: none;
+    color: colors.$mainColor;
+    justify-content: center;
+  }
+
+  i {
+    font-size: 10px;
+  }
+}
