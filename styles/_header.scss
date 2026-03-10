@@ -82,30 +82,32 @@ $font-sizes: (
     text-align: center;
     color: colors.$mainColor;
     padding-top: 50px;
+    cursor: pointer;
 
     p {
       font-family: $mainFont;
       font-size: map-get($font-sizes, "small");
       line-height: 1.8;
       letter-spacing: 0.175rem;
-
-      a {
-        text-decoration: none;
-        color: colors.$mainColor;
-
-        &:visited {
-          font-size: map-get($font-sizes, "small");
-        }
-
-        &:hover {
-          font-size: map-get($font-sizes, "medium");
-        }
-      }
     }
 
     span {
       width: 17px;
       height: 11px;
+      transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+    }
+
+    &:hover {
+      p {
+        font-size: map-get($font-sizes, "medium");
+      }
+
+      span {
+        color: colors.$secondColor;
+        transform: translateY(5px);
+      }
     }
   }
 }

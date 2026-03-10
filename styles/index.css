@@ -99,6 +99,7 @@ footer {
   text-align: center;
   color: #FFFFFF;
   padding-top: 50px;
+  cursor: pointer;
 }
 .box__scroll p {
   font-family: "Josefin Sans", sans-serif;
@@ -106,19 +107,17 @@ footer {
   line-height: 1.8;
   letter-spacing: 0.175rem;
 }
-.box__scroll p a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-.box__scroll p a:visited {
-  font-size: 14px;
-}
-.box__scroll p a:hover {
-  font-size: 20px;
-}
 .box__scroll span {
   width: 17px;
   height: 11px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.box__scroll:hover p {
+  font-size: 20px;
+}
+.box__scroll:hover span {
+  color: #5474FD;
+  transform: translateY(5px);
 }
 
 .nav {
