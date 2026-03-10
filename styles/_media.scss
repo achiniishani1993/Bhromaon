@@ -106,7 +106,35 @@ $font-sizes: (
   .step__label {
     font-size: map-get($font-sizes, "xx-large");
   }
+
+  // section two
+
+  .containerTwo {
+    display: grid;
+    grid-template-columns: 230px 500px 1fr 1fr;
+
+    &__content {
+      grid-column: 2/3;
+
+      h2 {
+        font-size: map-get($font-sizes, "medium");
+      }
+      h3 {
+        font-size: map-get($font-sizes, "medium");
+      }
+      p {
+        font-size: map-get($font-sizes, "normal");
+      }
+
+      button {
+        font-size: map-get($font-sizes, "normal");
+      }
+    }
+  }
 }
+
+
+
 
 //Desktop
 
@@ -224,5 +252,30 @@ $font-sizes: (
   /* label */
   .step__label {
     font-size: map-get($font-sizes, "pro-large");
+  }
+
+  // section two
+
+  .containerTwo {
+    display: grid;
+    grid-template-columns: 230px 500px 1fr 1fr;
+
+    &__content {
+      grid-column: 2/3;
+
+      h2 {
+        font-size: map-get($font-sizes, "medium");
+      }
+      h3 {
+        font-size: map-get($font-sizes, "medium");
+      }
+      p {
+        font-size: map-get($font-sizes, "normal");
+      }
+
+      button {
+        font-size: map-get($font-sizes, "normal");
+      }
+    }
   }
 }
