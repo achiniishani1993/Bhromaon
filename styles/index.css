@@ -39,7 +39,7 @@ footer {
 }
 
 .box {
-  background-image: url(/Images/Mountain.png);
+  background-image: url(images/mountain.png);
   background-size: cover;
   background-position: center;
   font-family: "Josefin Sans", sans-serif;
@@ -216,7 +216,7 @@ footer {
   align-items: center;
   text-align: center;
   padding: 60px 20px;
-  background-image: url("/Images/buildings.png");
+  background-image: url("images/buildings.png");
   background-size: cover;
   background-position: center;
   color: #FFFFFF;
@@ -267,7 +267,7 @@ footer {
   justify-content: center;
   min-height: 500px;
   padding: 80px 20px;
-  background-image: url("/Images/hotel.png");
+  background-image: url("images/hotel.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ footer {
   justify-content: center;
   min-height: 500px;
   padding: 80px 20px;
-  background-image: url("/Images/beach.png");
+  background-image: url("images/beach.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -371,7 +371,7 @@ footer {
 .containerFour {
   min-height: 500px;
   padding: 50px 20px;
-  background-image: url("/Images/man1.png");
+  background-image: url("images/man1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
